@@ -1,3 +1,4 @@
+```js
 'use client'
 import React, { useState, useRef, useEffect } from 'react';
 import { FileText, UploadCloud, MessageSquareMore, UserCircle, LayoutDashboard } from 'lucide-react';
@@ -165,3 +166,4 @@ export default function Dashboard() {
     </div>
   );
 }
+```
