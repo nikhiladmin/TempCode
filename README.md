@@ -167,3 +167,50 @@ export default function Dashboard() {
   );
 }
 ```
+
+```js
+import React from 'react';
+
+const LandingPage = () => {
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
+      {/* Navbar */}
+      <nav className="flex items-center justify-between px-6 py-4 shadow-md">
+        <div className="text-2xl font-bold text-blue-600">Infyvoice</div>
+        <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          Login
+        </button>
+      </nav>
+
+      {/* Hero Section */}
+      <div className="flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 py-16 max-w-6xl mx-auto">
+        <div className="md:w-1/2 mb-10 md:mb-0">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Welcome to <span className="text-blue-600">Infyvoice</span>
+          </h1>
+          <p className="text-lg md:text-xl text-gray-600 mb-6">
+            - by Neural Dot
+          </p>
+          <p className="text-md md:text-lg text-gray-700 mb-6">
+            Experience seamless interaction with your documents using our AI-powered voice assistant. Get real-time summaries, insights, and smart navigation features that transform the way you understand and manage content.
+          </p>
+          <button className="px-6 py-3 bg-blue-600 text-white text-lg rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+            Get Started
+          </button>
+        </div>
+
+        {/* Image */}
+        <div className="md:w-1/2 flex justify-center">
+          <img
+            src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d3?auto=format&fit=crop&w=800&q=80"
+            alt="AI Voice Assistant"
+            className="w-full max-w-md rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default LandingPage;
+```
